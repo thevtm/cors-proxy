@@ -28,7 +28,7 @@ app.use(function *() {
 })
 
 if (!module.parent) {
-  const PORT = 3000
+  const PORT = process.env.PORT || 3000
 
   console.log(`Server is running in port: ${PORT}`)
   app.listen(PORT)
